@@ -1,0 +1,39 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+    transition: 0.15s ;
+    font-family: roboto, arial ;
+    color: rgb(140,141,135) ;
+}
+
+:root{
+    --background: rgb(228,227,227) ;
+    --overlay: rgb(250,250,249, 0.6) ;
+    --call-to-action: rgb(237,69,69) ;
+    --call-to-action-light: rgb(237,69,69,0.2) ;
+    --button-radius: 0.8rem ;
+    --transition:0.5s ease-in;
+}
+
+body{
+    background-color: var(--background) ;
+    padding-top: 5rem ;
+    position: relative ;
+} 
+
+.card:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.card:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.card:nth-child(4){
+    transition-delay:  400ms;
+}
+
+.card:nth-child(5){
+    transition-delay:  500ms ;
+}

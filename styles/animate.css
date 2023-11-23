@@ -1,0 +1,111 @@
+/* ---------cards---------- */ 
+.hidden{
+    opacity: 0 ;
+    transition: 1.5s ;
+    filter: blur(6px);
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1 ;
+    filter: blur(0px) ;
+    transform: translate(0);
+}
+
+
+
+
+/* !!!!!!!!!!fooooter~~~~~~~ */
+
+article .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 550px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+article .wave.wave-1{
+    animation: animate 30s linear infinite;
+    z-index: 5;
+    opacity: 1;
+    animation-delay: 0;
+    bottom: 0;
+
+}
+article .wave.wave-2{
+    animation: animate2 15s linear infinite;
+    z-index: 4;
+    opacity: 1;
+    animation-delay: 0;
+    bottom: 0;
+
+}
+article .wave.wave-3{
+    animation: animate3 30s linear infinite;
+    z-index: 3;
+    opacity: .3;
+    animation-delay: -2s;
+    bottom: 15px;
+
+}
+article .wave.wave-{
+    animation: animate4 30s linear infinite;
+    z-index: 2;
+    opacity: .7;
+    animation-delay: -5s;
+    bottom: 20;
+
+}
+
+.wave-holder{
+   z-index: -1 ;
+}
+
+@media (max-width: 700px) {
+    .wave-holder{
+        display: none ;
+    }
+}
+
+
+@keyframes animate{
+    0%{
+     background-position-x:0;
+    } 
+    100%{
+     background-position-x:1000px;
+    } 
+ }
+ @keyframes animate2{
+    0%{
+     background-position-x:0;
+    } 
+    100%{
+     background-position-x:1000px;
+    } 
+ }
+ @keyframes animate3{
+    0%{
+     background-position-x:0;
+    } 
+    100%{
+     background-position-x:1000px;
+    } 
+ }
+ @keyframes animate4{
+    0%{
+     background-position-x:0;
+    } 
+    100%{
+     background-position-x:1000px;
+    } 
+ }
+ 
+ @media(prefers-reduced-animation){
+     .hidden{
+         transition: none ;
+     }
+ }
